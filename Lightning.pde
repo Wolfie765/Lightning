@@ -9,15 +9,19 @@ int startY = 300;
 int endX = 0;
 int endY = 0;
 
+
 void draw(){
+	background (0); 
 	while( endX < 400)
 	{
+	
 		// line(startX, startY, endX,endY);
 		// startX = startX + (int)(Math.random()*40 - 5);
 		// startY = endY;
 		// endX = (int)(Math.random()*40 -5);
 		// endY = endY + 5;
 		stroke(255, 255, 0);
+		strokeWeight(3);
 		endX = startX + (int)(Math.random()*9);
 		endY = startY + (int)(Math.random()*21)-10;
 		line(startX, startY, endX,endY);
